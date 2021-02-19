@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ol, ul{list-style: none;}
+body{font-size: 14px; font-family: 'Open Sans', sans-serif; }
+.clear:after{clear: both; display: block; content: '';}
+a{text-decoration: none;}
+.center{width: 100%; height: auto; max-width: 1600px; margin: auto;}
+
+
+.nav{width: 100%; height: auto; background: #111;}
+.nav .navBox{width: 100%; height: auto; padding: 10px 0; }
+.nav .navBox .navLogo{width: 5%; float: left; _margin-right: 20px;}
+.nav .navBox .navLogo a{width: 100%; height: auto; display: block;}
+.nav .navBox .navLogo img{width: 70px;}
+/* .nav .navLogo>div{background-image: url(../img/blizzard.png); width: 100%; height: 50px; background-size: cover; background-repeat: no-repeat;} */
+
+/* .navBox .leftNav{width: 95%;} */
+.navBox .navList{width: 95%; float: left;}
+
+.navBox .mainNav{float: left; width: 75%; height: auto;}
+.navBox .mainNav li{display: inline-block; padding: 0 20px; line-height: 2.8;}
+.navBox .mainNav li a{_display: flex; color: #fff;}
+
+.navBox .sideNav{width: 20%; float: left;}
+.navBox .sideNav li{display: inline-block; padding: 0 10px; line-height: 2.8; float: right;}
+.navBox .sideNav li a{color: #fff;}
+
+
+
+
+
+/* .navBox .rightNav{width: 20%; position: absolute; top: 0; right: 0;}
+.navBox .sideNav{_width: 20%; float: right;}
+.navBox .sideNav li{display: inline-block;} */
+
+
+
+
+
+/* section 2 - header video section */
+
+.videoHeader{display: block; width: 100%; height: auto; _min-height: 600px;}
+.videoHeader .video{height: 75vh; overflow: hidden;}
+.videoHeader .video video{display: block; width: 100%;}
+
+.headerCon{position: absolute; top: 25%; left: 50%; transform: translate(-50%,0);}
+.headerCon .headerLogo{width:100%; text-align: center; margin-bottom: 30px;}
+.headerCon .headerLogo img{width: 90%;}
+
+
+.videoHeader .headerBtns{width: 100%; height: auto; text-align: center;}
+.videoHeader .headerBtns a{color: #fff; font-size: 18px; padding: 10px 30px; _background: tomato; margin: 0 20px; width: 30%; display: inline-block; border-radius: 3px;}
+.videoHeader .headerBtns a.trailerBtn{_background: #007dd1;background: rgba(39, 130, 250, 0.9);}
+.videoHeader .headerBtns a.buyBtn{_background:#fa9c1e; background: rgba(248, 89, 26, 0.9);}

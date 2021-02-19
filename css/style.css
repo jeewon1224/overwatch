@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face { font-family: 'koverwatch'; src: url(../font/koverwatch.ttf) format('truetype');}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
 *{margin: 0; padding: 0; box-sizing: border-box;}
 ol, ul{list-style: none;}
 body{font-size: 14px; font-family: 'Open Sans', sans-serif; }
@@ -14,10 +21,15 @@ a{text-decoration: none;}
 .nav .navBox .navLogo img{width: 70px;}
 /* .nav .navLogo>div{background-image: url(../img/blizzard.png); width: 100%; height: 50px; background-size: cover; background-repeat: no-repeat;} */
 
+
+
+
+
+
 /* .navBox .leftNav{width: 95%;} */
 .navBox .navList{width: 95%; float: left;}
 
-.navBox .mainNav{float: left; width: 75%; height: auto;}
+.navBox .mainNav{float: left; width: 80%; height: auto;}
 .navBox .mainNav li{display: inline-block; padding: 0 20px; line-height: 2.8;}
 .navBox .mainNav li a{_display: flex; color: #fff;}
 
@@ -39,16 +51,82 @@ a{text-decoration: none;}
 
 /* section 2 - header video section */
 
-.videoHeader{display: block; width: 100%; height: auto; _min-height: 600px;}
-.videoHeader .video{height: 75vh; overflow: hidden;}
-.videoHeader .video video{display: block; width: 100%;}
+.headerSection{display: block; width: 100%; _min-height: 600px; overflow: hidden; position: relative; _height: 75vh;}
+.headerSection .video{_height: 75vh; overflow: hidden;}
+.headerSection .video video{display: block; width: 100%;}
 
 .headerCon{position: absolute; top: 25%; left: 50%; transform: translate(-50%,0);}
-.headerCon .headerLogo{width:100%; text-align: center; margin-bottom: 30px;}
+.headerCon .headerLogo{width:100%; text-align: center; margin-bottom: 30px; height: auto;}
 .headerCon .headerLogo img{width: 90%;}
 
+/* header buttons */
+.headerSection .headerBtns{width: 100%; height: auto; text-align: center;}
+.headerSection .headerBtns a{color: #fff; font-size: 18px; padding: 10px 30px; _background: tomato; margin: 0 20px; width: 30%; display: inline-block; border-radius: 3px;}
+.headerSection .headerBtns a.trailerBtn{_background: #007dd1;background: rgba(39, 130, 250, 0.9);}
+.headerSection .headerBtns a.buyBtn{_background:#fa9c1e; background: rgba(248, 89, 26, 0.9);}
 
-.videoHeader .headerBtns{width: 100%; height: auto; text-align: center;}
-.videoHeader .headerBtns a{color: #fff; font-size: 18px; padding: 10px 30px; _background: tomato; margin: 0 20px; width: 30%; display: inline-block; border-radius: 3px;}
-.videoHeader .headerBtns a.trailerBtn{_background: #007dd1;background: rgba(39, 130, 250, 0.9);}
-.videoHeader .headerBtns a.buyBtn{_background:#fa9c1e; background: rgba(248, 89, 26, 0.9);}
+
+/* header link logos */
+.headerSection .linkLogos{width: 100%; height: auto;     display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px 0;
+}
+
+.headerSection .linkLogos>a{padding: 10px; display: inline-block;}
+.headerSection .linkLogos .logo1{_width: auto; height: auto; float: left; width: 7%;}
+/* .headerSection .linkLogos .logo1 h2{width: 100%; color: #fff; font-weight: 500; font-size: 40px;font-family: 'Roboto', sans-serif;} */
+.headerSection .linkLogos .logo1 img{width: 100%;}
+
+
+.headerSection .linkLogos .logo2{width: 22%; height: auto; float: left;}
+.headerSection .linkLogos .logo2 img{width: 100%; }
+
+.headerSection .linkLogos .logo3{width: 25%; height: auto; float: left;}
+.headerSection .linkLogos .logo3 img{width: 100%; }
+
+.headerSection .linkLogos .logo4{width: 25%; height: auto; float: left;}
+.headerSection .linkLogos .logo4 img{width: 100%; }
+
+
+
+
+
+/*------------------------------------------------------------*/
+
+/* event 섹션 */
+.eventSection{width: 100%; height: auto; _background: rgb(224, 194, 182); _position: relative;}
+.eventSection .newYearBanner{width: 100%; height: auto; overflow: hidden; position: relative;}
+.newYearBanner .newYearBannerImg{width: 100%; height: auto; _position: absolute;}
+.newYearBanner .newYearBannerImg img{width: 135%; height: 100%; float: left; transform: translateX(-260px);}
+
+.newYearBanner .newYearBannerdetail{position: absolute; width: 100%; height: auto;}
+.newYearBanner .detailTxt{text-align: left; margin-left: 55%; display: flex; flex-direction: column; _position: absolute; margin-top: 165px;}
+.newYearBanner .detailTxt h1{font-size: 50px; color: #4b535d; font-weight: 600; font-family: 'koverwatch', sans-serif;}
+.newYearBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
+.newYearBanner .detailTxt p{font-size: 17px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+.newYearBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px;}
+
+
+
+
+
+
+
+
+
+
+.eventSection .saleBanner{width: 100%; height: auto; overflow: hidden; position: relative;}
+.saleBanner .saleBannerImg{width: 100%; height: auto;}
+.saleBanner .saleBannerImg img{width: 130%; height: auto; overflow: hidden; float: left; transform: translateX(-200px);}
+
+.saleBanner .saleBannerdetail{position: absolute; width: 100%;}
+
+
+
+.newsSection{overflow: hidden; width: 100%; height: 100%;}
+.newsSection .news_bg{width: 100%; height: auto;}
+.newsSection .news_bg img{width: 180%; height: auto; transform: translateX(-22%);}
+
+.newsSection .newsGridSection{width: 50%; height: 200px; background: violet; float: left;}
+.newsSection .newsTitSection{width: 50%; height: 200px; background: turquoise; float: left;}

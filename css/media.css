@@ -5,3 +5,19 @@
 @media (max-width: 1000px){
   .navBox .mainNav li{padding: 5px;}
 } */
+
+
+
+@media (max-width: 1200px){
+  .navBox .mainNav li{padding: 0 10px;}
+  .newsSection .newsBoxes .newsImgSec>a{height: 150px;}
+}
+
+
+
+@media (max-width: 1000px){
+  .newsSection .newsLeftBox{width: 100%;}
+  .newsSection .newsRightBox{width: 100%;}
+  
+  /* .newsSection .newsBoxes .newsImgSec>a{height: 100px;} */
+}

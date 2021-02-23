@@ -11,14 +11,14 @@ ol, ul{list-style: none;}
 body{font-size: 14px; font-family: 'Open Sans', sans-serif; }
 .clear:after{clear: both; display: block; content: '';}
 a{text-decoration: none;}
-.center{width: 100%; height: auto; max-width: 1600px; margin: auto;}
+.center{width: 100%; height: auto; max-width: 1500px; margin: auto;}
 
 
-.nav{width: 100%; height: auto; background: #111;}
+.nav{width: 100%; height: auto; background: #111;position: fixed; top: 0; left: 0; z-index: 999;}
 .nav .navBox{width: 100%; height: auto; padding: 10px 0; }
 .nav .navBox .navLogo{width: 5%; float: left; _margin-right: 20px;}
 .nav .navBox .navLogo a{width: 100%; height: auto; display: block;}
-.nav .navBox .navLogo img{width: 70px;}
+.nav .navBox .navLogo img{width: 100%;}
 /* .nav .navLogo>div{background-image: url(../img/blizzard.png); width: 100%; height: 50px; background-size: cover; background-repeat: no-repeat;} */
 
 
@@ -31,7 +31,12 @@ a{text-decoration: none;}
 
 .navBox .mainNav{float: left; width: 80%; height: auto;}
 .navBox .mainNav li{display: inline-block; padding: 0 20px; line-height: 2.8;}
-.navBox .mainNav li a{_display: flex; color: #fff;}
+.navBox .mainNav li a{color: #fff; }
+.navBox .mainNav li:hover a{color: #fa9c1e;}
+
+
+.navBox .mainNav li.game ul{display: none; display: flex; flex-direction: column;}
+
 
 .navBox .sideNav{width: 20%; float: left;}
 .navBox .sideNav li{display: inline-block; padding: 0 10px; line-height: 2.8; float: right;}
@@ -52,10 +57,10 @@ a{text-decoration: none;}
 /* section 2 - header video section */
 
 .headerSection{display: block; width: 100%; _min-height: 600px; overflow: hidden; position: relative; _height: 75vh;}
-.headerSection .video{_height: 75vh; overflow: hidden;}
+.headerSection .video{overflow: hidden;}
 .headerSection .video video{display: block; width: 100%;}
 
-.headerCon{position: absolute; top: 25%; left: 50%; transform: translate(-50%,0);}
+.headerCon{position: absolute; top: 25%; left: 50%; transform: translate(-50%,0); display: flex; flex-direction: column;}
 .headerCon .headerLogo{width:100%; text-align: center; margin-bottom: 30px; height: auto;}
 .headerCon .headerLogo img{width: 90%;}
 
@@ -95,38 +100,86 @@ a{text-decoration: none;}
 /*------------------------------------------------------------*/
 
 /* event 섹션 */
-.eventSection{width: 100%; height: auto; _background: rgb(224, 194, 182); _position: relative;}
-.eventSection .newYearBanner{width: 100%; height: auto; overflow: hidden; position: relative;}
-.newYearBanner .newYearBannerImg{width: 100%; height: auto; _position: absolute;}
-.newYearBanner .newYearBannerImg img{width: 135%; height: 100%; float: left; transform: translateX(-260px);}
 
-.newYearBanner .newYearBannerdetail{position: absolute; width: 100%; height: auto;}
-.newYearBanner .detailTxt{text-align: left; margin-left: 55%; display: flex; flex-direction: column; _position: absolute; margin-top: 165px;}
-.newYearBanner .detailTxt h1{font-size: 50px; color: #4b535d; font-weight: 600; font-family: 'koverwatch', sans-serif;}
+/* 새해 배너 섹션 */
+.eventSection{width: 100%; height: auto; _background: rgb(224, 194, 182); _position: relative;}
+.eventSection .newYearBanner{width: 100%; height: auto; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;
+}
+.newYearBanner .newYearBannerImg{width: 100%; height: auto; _position: absolute;}
+.newYearBanner .newYearBannerImg img{width: 135%; height: auto; float: left; transform: translateX(-300px);}
+
+.newYearBanner .newYearBannerdetail{position: absolute; width: 100%; height: auto; display: flex;}
+/* .newYearBanner .detailTxt{text-align: left; margin-left: 55%; display: flex; flex-direction: column; _position: absolute; margin-top: 130px;} */
+.newYearBanner .detailTxt{width: 50%; margin-left: 50%;}
+.newYearBanner .detailTxt h1{font-size: 50px; color: #4b535d; font-weight: 500; font-family: 'koverwatch', sans-serif;}
 .newYearBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
 .newYearBanner .detailTxt p{font-size: 17px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
 .newYearBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px;}
 
 
-
-
-
-
-
-
-
-
-.eventSection .saleBanner{width: 100%; height: auto; overflow: hidden; position: relative;}
+.eventSection .saleBanner{width: 100%; height: auto; overflow: hidden; position: relative;     display: flex;justify-content: center; align-items: center;}
 .saleBanner .saleBannerImg{width: 100%; height: auto;}
-.saleBanner .saleBannerImg img{width: 130%; height: auto; overflow: hidden; float: left; transform: translateX(-200px);}
-
-.saleBanner .saleBannerdetail{position: absolute; width: 100%;}
+.saleBanner .saleBannerImg img{width: 160%; height: auto; overflow: hidden; float: left; transform: translateX(-20%);}
 
 
+/* 세일 배너 섹션 */
+.saleBanner .saleBannerdetail{position: absolute; width: 100%; height: auto;}
+.saleBanner .detailTxt{text-align: right; _margin-right: 50%; _display: flex; _flex-direction: column; _justify-content: center; _margin-top: 100px; width: 50%;}
+.saleBanner .detailTxt h1{font-size: 50px; color: #4b535d; font-weight: 500; font-family: 'koverwatch', sans-serif;}
+.saleBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
+.saleBanner .detailTxt p{font-size: 17px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+.saleBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px;}
 
-.newsSection{overflow: hidden; width: 100%; height: 100%;}
-.newsSection .news_bg{width: 100%; height: auto;}
-.newsSection .news_bg img{width: 180%; height: auto; transform: translateX(-22%);}
 
-.newsSection .newsGridSection{width: 50%; height: 200px; background: violet; float: left;}
-.newsSection .newsTitSection{width: 50%; height: 200px; background: turquoise; float: left;}
+
+
+
+
+
+/* 뉴스 섹션 */
+.newsSection{width: 100%; height: auto; position: relative;}
+.newsSection .news_bg{width: 100%; height: auto; }
+.newsSection .news_bg>div{background-image: url(../img/news_bg.jpg); background-repeat: no-repeat; background-size: cover; _background-position: 50%; display: block; position: absolute; width: 100%;}
+/* .newsSection .news_bg{width: 100%; height: auto;} */
+.newsSection .news_bg>div img{width: 180%; height: auto; transform: translateX(-22%); position: fixed;}
+
+.newsSection .newsConBox{width: 100%; _background: rosybrown;height: 500px; padding: 30px 40px; position: absolute;}
+
+
+
+
+
+.newsSection .newsLeftBox{width: 50%; height: auto; _background: violet; }
+.newsSection .newsLeftBox .newsHeader{width: 100%; display: flex; align-items: center; font-size: 18px;} 
+.newsSection .newsLeftBox .newsHeader h3{font-family:'Noto Sans KR',sans-serif; font-weight: 400; }
+.newsSection .newsLeftBox .newsHeader span{padding: 0 10px;}
+.newsSection .newsLeftBox .newsHeader a{}
+
+
+.newsSection .newsBoxes{    width: 100%;
+  
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  display: grid;
+  /* -ms-grid-columns: 1fr 1fr; */
+  grid-template-columns: 1fr 1fr;
+  /* -ms-grid-rows: 1fr 1fr; */
+  grid-template-rows: 1fr 1fr;
+  padding-right: 20px;
+  padding-bottom: 15px;
+gap: 5px;
+}
+.newsSection .newsBoxes>div{width: 100%; border: 1px solid #111; height: auto; float: left; padding: 5px; display: flex; flex-direction: column; margin: 10px 0;}
+.newsSection .newsBoxes .newsImgSec{width: 100%; height: auto; border: 1px solid #111; }
+.newsSection .newsBoxes .newsImgSec>a{width: 100%; height: 200px; padding: 5px; background-image: url(../img/news_1.png); background-size: cover; display: block;}
+.newsSection .newsBoxes .newsImgSec>div 
+
+
+
+.newsSection .newsBoxes .newsTitSec{width: 100%; height: auto; border: 1px solid #ddd;}
+
+
+
+
+
+

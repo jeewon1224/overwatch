@@ -28,15 +28,16 @@
         <div class="clear navList">
           <ul class="mainNav">
             <li>
-              <a href="">게임<i class="fa fa-angle-down"></i></a>
-              <ul>
+              <div class="game">게임<i class="fa fa-angle-down"></i></div>
+              <ul class="depth_1">
                 <li><a href="#">정보</a></li>
                 <li><a href="#">전장</a></li>
               </ul>
             </li>
-            <li><a href="">영웅</a></li>
-            <li><a href="">이벤트<i class="fa fa-angle-down"></i></a>
-              <ul>
+            <li><a href="https://playoverwatch.com/ko-kr/heroes/">영웅</a></li>
+            <li>
+              <div class="event">이벤트<i class="fa fa-angle-down"></i></div>
+              <ul class="depth_2">
                 <li><a href="#">설날 이벤트</a></li>
                 <li><a href="#">기록 보관소</a></li>
                 <li><a href="#">감사제</a></li>
@@ -46,17 +47,25 @@
               </ul>
             </li>
             <li><a href="">자료실</a></li>
-            <li><a href="">E-스포츠<i class="fa fa-angle-down"></i></a>
-              <ul>
+            <li>
+              <div class="esports">E-스포츠<i class="fa fa-angle-down"></i></div>
+              <ul class="depth_3">
                 <li><a href="#">정보</a></li>
                 <li><a href="#">오버워치 리그</a></li>
                 <li><a href="#">오버워치 컨텐더스</a></li>
                 <li><a href="#">오픈 디비전 코리아</a></li>
                 <li><a href="#">오버워치 월드컵</a></li>
-                <li><a href="#">환상의 겨울나라</a></li>
               </ul>
             </li>
-            <li><a href="">커뮤니티<i class="fa fa-angle-down"></i></a></li>
+            <li>
+              <div class="coommunity">커뮤니티<i class="fa fa-angle-down"></i></div>
+              <ul class="depth_4">
+                <li><a href="#">플레이어 검색</a></li>
+                <li><a href="#">일상 속의 영웅</a></li>
+                <li><a href="#">토론장</a></li>
+              </ul>
+            </li>
+            
           </ul>
 
           <ul class="sideNav">
@@ -179,8 +188,8 @@
                         <a href="#" class="grid2"></a>
                       </div>
                       <div class="newsTitSec">
-                        <a href="#">오버워치 2 개발의 숨은 뒷 이야기</a>
-                        <span>2021년 2월 21일</span>
+                        <a href="#">설빔 곱게 차려입고: 한복(Hanbok) D.Va, 메르시 일러스트 제작 후기</a>
+                        <span>2021년 2월 18일</span>
                        </div>
                     </div>
                     <div class="grid">
@@ -188,8 +197,8 @@
                         <a href="#" class="grid3"></a>
                       </div>
                       <div class="newsTitSec">
-                        <a href="#">오버워치 2 개발의 숨은 뒷 이야기</a>
-                        <span>2021년 2월 21일</span>
+                        <a href="#">현상금 사냥꾼의 탄생 비화</a>
+                        <span>2021년 2월 9일</span>
                        </div>
                     </div>
                     <div class="grid">
@@ -231,28 +240,366 @@
               <br>오버워치에는 다양한 능력을 가진 개성 넘치는 영웅들이 있습니다.</p>
             </div>
 
-            <div class="heroDesc">
-              <div class="heroImg">
-                <div>
-                  <img src="img/hero1.png" alt="디바">
+            <div class="heroPanel">
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero1.png" alt="디바">
+                  </div>
                 </div>
-              </div>
-              <div class="heroTxt">
-                <div>
-                  <h2>D.VA</h2>
-                  <p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+                <div class="heroTxt">
+                  <div>
+                    <h2>D.VA</h2>
+                    <p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+                  </div>
+                  <!-- <div>
+                    <h2>겐지</h2>
+                    <p>기계가 되어버린 몸을 받아들여 내면의 평화를 찾은 강력한 전사이자 사이보그 닌자</p>
+                  </div> -->
                 </div>
+                <!-- end of hero txt -->
               </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero2.png" alt="겐지">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>겐지</h2>
+                    <p>기계가 되어버린 몸을 받아들여 내면의 평화를 찾은 강력한 전사이자 사이보그 닌자</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>둠피스트</h2>
+                    <p>지능과 카리스마, 잔혹한 무력을 동원해 더욱 강한 세계를 건설하려는 책략가</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>라인하르트</h2>
+                    <p>용맹, 정의, 용기라는 기사도의 미덕을 따르는 노년의 용사</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>레킹볼</h2>
+                    <p>구르는 로봇을 조종하는 달 출신의 유전자 조작 햄스터</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>로드호그</h2>
+                    <p>초인적인 힘과 잔혹함, 파괴적인 성향으로 악명이 자자한 살인마</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>루시우</h2>
+                    <p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>D.VA</h2>
+                    <p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>D.VA</h2>
+                    <p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              <div class="heroDesc">
+                <div class="heroImg">
+                  <div>
+                    <img src="img/hero/hero3.png" alt="디바">
+                  </div>
+                </div>
+                <div class="heroTxt">
+                  <div>
+                    <h2>D.VA</h2>
+                    <p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+                  </div>
+                </div>
+                <!-- end of hero txt -->
+              </div>
+              <!-- end of hero Desc -->
+              
+  
             </div>
-
+            
 
 
             <div class="heroList">
-              <div>
-                <div>
-                  <a href="#"></a>
+              <div class="heroPortrait">
+                <!-- <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_1.png" alt="">
+                  </a>
+                  <span>디바</span>
                 </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_2.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_3.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_4.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_5.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_6.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_7.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_8.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_9.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_10.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_11.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_12.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_13.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_14.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_15.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_16.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_17.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_18.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_19.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_20.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_21.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_22.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_23.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_24.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_25.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_26.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_27.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_28.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_29.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_30.png" alt="">
+                  </a>
+                  <span>둠피스트</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_31.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/hero/hero_portrait_32.png" alt="">
+                  </a>
+                  <span>디바</span>
+                </div> -->
+                
+                
+                
+
               </div>
+              <a href="https://playoverwatch.com/ko-kr/heroes/">더보기</a>
             </div>
           </div>
         <!-- </div> -->
@@ -260,6 +607,70 @@
 
     </section>
 
+    <section class="buyNow">
+      <div class="buy_bg">
+        <div class="container center">
+          <div class="buyLeft">
+            <img src="img/footer_buy_img.png" alt="지금 구매하세요.">
+          </div>
+          <div class="buyRight">
+            <div>
+              <h1>시작하기</h1>
+              <p>미래의 전장에서 궁극의 팀 기반 슈팅 게임을 플레이하십시오.</p>
+              <a href="https://shop.blizzard.com/product/overwatch?blzcmp=ow_buy_bot">구매하기</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sns">
+      <div class="snsContainter center">
+        <h2>소셜 서비스</h2>
+        <ul>
+          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="footer">
+      <div class="footerContainter">
+        <div class="langSelect">
+          <div class="selected">
+            <a href="" class="globe"><i class="fa fa-globe"></i></a>
+            <span>한국어</span>
+            <a href="" class="arrow"><i class="fa fa-angle-right"></i></a>
+          </div>
+          <div class="langList"></div>
+        </div>
+
+        <div class="footerLogo">
+          <div>
+            <img src="img/blizzard.png" alt="블리자드">
+          </div>
+        </div>
+
+        <div class="footerNav">
+          <div>
+            <a href="">인재 채용</a>
+            <span>|</span>
+            <a href="">회사 소개</a>
+            <span>|</span>
+            <a href="">고객 지원</a>
+            <span>|</span>
+            <a href="">보도 자료</a>
+            <span>|</span>
+            <a href="">API</a></li>
+            <span>|</span>
+            <a href="">블리자드 PC방</a></li>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </div>
 
@@ -268,22 +679,9 @@
 
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-
-
+<script src="js/custom.js"></script>
 </body>
 </html>
 
-<!-- 
-$(".productImg").click(function(){
-  let index = $(this).index();
-
-  $(".productTxt").hide();
-  $(".productTxt").eq(index).show();
-});
-
-//첫번째 탭 강제 클릭 이벤트를 발생시킨다!! @@@@@@@@@
-$(".productImg").eq(0).trigger("click"); 
-
-}); -->

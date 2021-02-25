@@ -15,45 +15,34 @@ $(function(){
 
 
 
+//   $(".heroPortrait>div").mouseover(function(){
+//     let index = $(this).index();
+
+//     $(".heroDesc").hide();
+//     $(".heroDesc").eq(index).show();
+//   });
+
+
+// let heroItems = [];
+// const heroArr = ['D.Va', '겐지', '둠피스트', '라인하르트', '레킹볼', '로드호그', '루시우', '리퍼', '맥크리'];
+// for(let i = 1; i < $(".heroDesc").length; i++){
+//   $(".heroDesc").eq(i).hide();
+
+//   let heroItem = `<div>
+//   <a href="#">
+//     <img src="img/hero/hero_portrait_${i}.png" alt="">
+//   </a>
+//   <span>${heroArr[i-1]}</span>
+// </div>`;
+// heroItems += heroItem;
+// }
+// $(".heroPortrait").append(heroItems);
 
 
 
 
 
-
-
-
-  $(".heroPortrait").mouseover(function(){
-    let index = $(this).index();
-
-    $(".heroDesc").hide();
-    $(".heroDesc").eq(index).show();
-  });
-
-    
-  //첫번째 탭 강제 클릭 이벤트를 발생시킨다!! @@@@@@@@@
-//  $(".dva").eq(0).trigger("click"); 
-
-let heroItems = [];
-const heroArr = ['D.Va', '겐지', '둠피스트', '라인하르트', '레킹볼', '로드호그', '루시우', '리퍼', '맥크리'];
-for(let i = 1; i < $(".heroDesc").length; i++){
-  $(".heroDesc").eq(i).hide();
-
-  let heroItem = `<div>
-  <a href="#">
-    <img src="img/hero/hero_portrait_${i}.png" alt="">
-  </a>
-  <span>${heroArr[i-1]}</span>
-</div>`;
-heroItems += heroItem;
-}
-$(".heroPortrait").append(heroItems);
-
-
-
-
-
-// --------------------------------------------------
+// // --------------------------------------------------
 
 
 

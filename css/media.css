@@ -1,32 +1,217 @@
-/* @media (max-width: 1280px){
-  .headerSection{display:block; width: auto; top: 0; bottom: 0; left:0; right: 0; position: relative; margin: auto; overflow: hidden;}
-
-}
-@media (max-width: 1000px){
-  .navBox .mainNav li{padding: 5px;}
-} */
-
-
 
 @media (max-width: 1200px){
-  .nav .navBox{padding: 10px 10px ;}
+  /* .nav .navBox{padding: 10px 10px ;} */
+  .headerSection .video{width: 110%;}
+
+  .headerCon{width: 700px;}
+  .headerCon .headerLogo{_width: 70%; margin-bottom: 10px;}
+  .headerSection .headerBtns a{padding: 5px 10px; font-size: 15px;}
+
 
   .navBox .mainNav li{padding: 0 10px;}
   .newsSection .newsBoxes .newsImgSec>a{height: 150px;}
+
+
 }
 
 
 
 @media (max-width: 1024px){
-  .nav .navBox{padding: 10px 10px;}
+  .headerSection .video{width: 120%;}
+
+  /* .nav .navBox{padding: 10px 10px;} */
   .nav .navBox .navLogo{width: 10%;}
   .navBox .navList{width: 90%;}
 
+  .newYearBanner .newYeardetail{padding: 150px 40px;}
+  .newYearBanner .detailTxt h1{font-size: 45px;}
+  .newYearBanner .detailTxt h2{font-size: 18px;}
+  .newYearBanner .detailTxt p{font-size: 14px;}
+  .newYearBanner .detailTxt a{padding: 5px 30px; margin-top: 10px; font-size: 14px;}
 
-  .newYearBanner .detailTxt h1{font-size: 30px;}
+  .saleBanner .saledetail{padding: 60px 40px;}
+  .saleBanner .detailTxt h1{font-size: 45px;}
+  .saleBanner .detailTxt h2{font-size: 18px;}
+  .saleBanner .detailTxt p{font-size: 14px;}
+  .saleBanner .detailTxt a{padding: 5px 30px; margin-top: 10px; font-size: 14px;}
 
-  .newsSection .newsLeftBox{width: 100%;}
-  .newsSection .newsRightBox{width: 100%;}
   
+  .newsSection .news_bg{background: none;}
+  .newsSection .newsConBox{display: flex; flex-direction: column-reverse; padding: 0;}
+  .newsSection .newsLeftBox{width: 100%; padding: 40px 60px; }
+  .newsSection .newsBoxes{padding: 0;}
+  .newsSection .newsRightBox{width: 100%; transform: translateY(0); background: url(../img/news_bg2.jpg); background-size: cover; background-position-x: 50%; background-repeat: no-repeat; padding: 50px 40px;}
+  .newsSection .newsLeftBox .newsHeader h3,
+  .newsSection .newsLeftBox .newsHeader a{font-size: 16px;}
+
   /* .newsSection .newsBoxes .newsImgSec>a{height: 100px;} */
+
+
+  .hero .heroCon .heroDesc{flex-direction: column; align-items: center;}
+  .hero .heroCon .heroDesc .heroImg{width: 100%;}
+  .hero .heroCon .heroDesc .heroTxt{width: 100%; text-align: center;}
+  .hero .heroCon .heroTit h1{font-size: 45px; }
+  .hero .heroCon .heroTit p{font-size: 16px;}
+  .hero .heroCon .heroDesc .heroTxt h2{font-size: 35px;}
+  .hero .heroCon .heroDesc .heroTxt p{font-size: 15px;}
+
+
+}
+
+
+
+@media (max-width: 900px){
+  .nav .navBox .navLogo{display: none;}
+  .navBox .navList{width: 100%;}
+  .headerSection .video{width: 130%;}
+
+
+  .newYearBanner .newYearBannerImg{background: url(../img/event_banner_2.jpeg); background-repeat: no-repeat; background-position-x: 50%;}
+  .newYearBanner .newYeardetail{padding: 290px 40px 50px; text-align: center;}
+  .newYearBanner .detailTxt{width: 100%; display:flex; flex-direction: column; align-items: center; margin-top: 20px;}
+  .newYearBanner .detailTxt h1{font-size: 45px;}
+  .newYearBanner .detailTxt p{width: 100%;}
+
+  .saleBanner .saleBannerImg{background: url(../img/event_banner_4.jpeg);background-repeat: no-repeat; background-position-x: center;}
+  .saleBanner .saledetail{padding: 280px 40px 50px;}
+  .saleBanner .detailTxt{width: 100%; text-align: center;}
+  .saleBanner .detailTxt h1{font-size: 45px;}
+
+
+  /* .newsSection .newsBoxes{display: none;} */
+  .newsSection .newsConBox{display: flex; flex-direction: column-reverse;}
+
+
+
+  .hero .heroCon .heroTit h1{font-size: 45px;}
+  .hero .heroCon .heroTit p{font-size: 16px;}
+}
+
+
+
+@media (max-width: 800px){
+
+  /* .headerSection .video video{width: auto; height: 150%;} */
+
+.nav .navBox{display: none;}
+.nav .navBox .navLogo{display: none;}
+
+.mobileNav{display: block;}
+
+.headerCon{width: 500px;}
+.headerSection .video{width: 150%;}
+
+
+
+
+
+.hero .heroCon .heroDesc{display: block;}
+.hero .heroCon .heroDesc .heroImg{width: 100%;}
+.hero .heroCon .heroDesc .heroTxt{width: 100%; text-align: center;}
+.hero .heroList{_float: left;}
+
+
+
+
+
+
+}
+
+@media (max-width: 768px){
+
+}
+
+
+@media (max-width: 640px){
+  .headerSection .video{ width: 230%; transform: translateX(-250px);}
+  
+  .headerCon{width: 430px;}
+  .headerSection .headerBtns a{width: 300px; margin: 10px;}
+  .headerSection .linkLogos{padding: 0 15px 0;}
+
+  .newYearBanner .detailTxt h1,
+  .saleBanner .detailTxt h1{font-size: 35px;}
+  .newYearBanner .detailTxt h2,
+  .saleBanner .detailTxt h2{font-size: 16px;}
+  .newYearBanner .detailTxt p,
+  .saleBanner .detailTxt p{font-size: 12px;}
+
+
+  .newsSection .newsBoxes{grid-template-columns: 1fr; grid-template-rows: 1fr; padding-right:0; _padding: 0 50px 0;}
+  .newsSection .newsLeftBox{padding: 30px 90px; position: relative; margin: auto;}
+  .newsSection .newsLeftBox .newsHeader h3{font-size: 14px;}
+  .newsSection .newsLeftBox .newsHeader a,
+  .newsSection .newsLeftBox .newsHeader span{display: none;}
+  
+  .newsSection .newsRightBox>div h4{font-size: 16px;}
+  .newsSection .newsRightBox>div img{width: 150px; margin: 15px 0;}
+  .newsSection .newsLeftBox .viewAllBtn{display: block; margin-top: 20px; font-size: 16px; font-weight: 600;}
+  .newsSection .newsLeftBox .viewAllBtn i{font-weight: 600;}
+
+
+  .hero .heroCon{padding: 40px 40px;}
+  .hero .heroCon .heroDesc .heroImg{display: none;}
+  .hero .heroCon .heroTit h1{font-size: 35px;}
+  .hero .heroCon .heroTit p{font-size: 14px;}
+  .hero .heroCon .heroDesc .heroTxt h2{font-size: 28px;}
+  .hero .heroCon .heroDesc .heroTxt p{font-size: 13px; margin-top: 10px;}
+  
+  
+  .hero .heroList{margin: 30px 0;}
+  .hero .heroList .heroPortrait{padding: 0;}
+  .hero .heroList .heroPortrait>div{margin: 3px;}
+  .hero .heroList .heroPortrait>div a{width: 60px; height: 70px;}
+
+
+  .buyNow .container{flex-direction: column;}
+  .buyNow .container .buyLeft{width: 100%; text-align: center;}
+  .buyNow .container .buyRight{width: 100%; text-align: center;}
+}
+
+
+
+@media (max-width: 480px){
+  .headerSection .video{ width: 300%; transform: translateX(-350px);}
+  .headerCon{width: 300px;}
+  .headerSection .headerBtns a{width: 250px;}
+  .headerSection .linkLogos>a{padding: 3px;}
+
+  .newYearBanner .newYeardetail{padding: 290px 20px 30px;}
+  .saleBanner .saledetail{padding: 280px 20px 30px;}
+
+  .newYearBanner .detailTxt h1, .saleBanner .detailTxt h1{font-size: 24px;}
+  .newYearBanner .detailTxt a, 
+  .saleBanner .detailTxt a, 
+  .newsSection .newsRightBox>div a{width: 160px;}
+
+  .newYearBanner .detailTxt h2, .saleBanner .detailTxt h2{font-size: 14px;}
+
+  .newsSection .newsLeftBox{padding: 20px 10px; margin: auto;}
+
+
+  .newsSection .newsRightBox{padding: 40px 20px;}
+  .newsSection .newsRightBox>div a{padding: 5px 30px; font-size: 14px;}
+  .newsSection .newsBoxes .newsTitSec{margin-top: 0px;}
+  .newsSection .newsBoxes .newsTitSec a, 
+  .newsSection .newsBoxes .newsTitSec span{font-size: 12px;}
+
+  .hero .heroCon{padding: 40px 20px;}
+  .hero .heroCon .heroTit h1{font-size: 24px;}
+  .hero .heroCon .heroTit p{font-size: 12px;}
+  .hero .heroCon .heroDesc .heroTxt>div{display: none;}
+  .hero .heroList{margin:0;}
+  .hero .heroList>a,
+  .buyRight a{padding: 5px 30px; font-size: 14px;}
+
+  .snsContainter{padding: 20px 20px;}
+  .snsContainter h2{font-size: 20px; margin-bottom: 10px;}
+
+
+
+  .buyNow .container{padding: 20px;}
+  .buyRight h1{font-size: 24px;}
+  .buyRight p{font-size: 12px; margin: 10px;}
+
+  
+
 }

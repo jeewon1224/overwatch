@@ -19,17 +19,17 @@ a{text-decoration: none;}
 /* ----------------------------------------- */
 /* 네비게이션 */
 .nav{width: 100%; height: auto; background: #111;position: fixed; top: 0; left: 0; z-index: 999;}
-.nav .navBox{width: 100%; height: auto; padding: 10px 0; }
-.nav .navBox .navLogo{width: 7%; float: left; _margin-right: 20px;}
-.nav .navBox .navLogo a{width: 90px; height: auto; display: block;}
-.nav .navBox .navLogo img{width: 100%;}
+.nav .navBox{width: 100%; height: auto; padding: 5px 10px; }
+.nav .navBox .navLogo{width: 10%; float: left; _margin: 0 20px;}
+.nav .navBox .navLogo a{width: 100%; height: auto; display: block;}
+.nav .navBox .navLogo img{width: 95px;}
 /* .nav .navLogo>div{background-image: url(../img/blizzard.png); width: 100%; height: 50px; background-size: cover; background-repeat: no-repeat;} */
 
 
 /* 메인 네이게이션 */
 
 /* .navBox .leftNav{width: 95%;} */
-.navBox .navList{width: 93%; float: left;}
+.navBox .navList{width: 90%; float: left;}
 
 .navBox .mainNav{float: left; width: 80%; height: auto;}
 .navBox .mainNav li{display: inline-block; padding: 0 20px; line-height: 2.8; }
@@ -65,20 +65,67 @@ a{text-decoration: none;}
 
 
 
+/* 모바일 용 네비게이션 */
+.mobileNav{width: 100%; position: absolute; display: none; font-size: 30px;}
+.mobileNav i{color: #fa9c1e; margin: 10px;}
 
+/* .menu-trigger {
+  margin-right: 70px;
+  margin-bottom: 50px;
+}
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+
+.menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+} */
+
+.mobileNav>div{width: 90%; height: 700px; background: #51658e;}
+
+
+
+/* --------------------------------------------- */
 /* section 2 - header video section */
 
 .headerSection{display: block; width: 100%; _min-height: 600px; overflow: hidden; position: relative; _height: 75vh;}
 .headerSection .video{overflow: hidden;}
 .headerSection .video video{display: block; width: 100%;}
 
-.headerCon{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column;}
+.headerCon{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column; align-items: center; width: 900px;}
 .headerCon .headerLogo{width:100%; text-align: center; margin-bottom: 30px; height: auto;}
 .headerCon .headerLogo img{width: 100%;}
 
 /* header buttons */
 .headerSection .headerBtns{width: 100%; height: auto; text-align: center;}
-.headerSection .headerBtns a{color: #fff; font-size: 18px; padding: 10px 30px; _background: tomato; margin: 0 20px; width: 30%; display: inline-block; border-radius: 3px;}
+.headerSection .headerBtns a{color: #fff; font-size: 18px; padding: 10px 30px; _background: tomato; margin: 0 20px; width: 200px; display: inline-block; border-radius: 3px; transition: all 0.4s;}
+.headerSection .headerBtns a:hover{opacity: 0.8; transform: scale(1.05);}
 .headerSection .headerBtns a.trailerBtn{_background: #007dd1;background: rgba(39, 130, 250, 0.9);}
 .headerSection .headerBtns a.buyBtn{_background:#fa9c1e; background: rgba(248, 89, 26, 0.9);}
 
@@ -115,35 +162,34 @@ a{text-decoration: none;}
 
 /* 새해 배너 섹션 */
 .eventSection{width: 100%; height: auto; _position: relative;}
-.eventSection .newYearBanner{width: 100%; height: auto; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;
+.eventSection .newYearBanner{width: 100%; height: auto; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;;
 }
-.newYearBanner .newYearBannerImg{width: 100%; height: auto; _position: absolute;}
-.newYearBanner .newYearBannerImg img{width: 135%; height: auto; float: left; transform: translateX(-300px);}
+.newYearBanner .newYearBannerImg{width: 100%; height: auto; _position: absolute; height: auto; background: url(../img/event_banner_1.jpeg); background-position: 50%;}
+.newYearBanner .newYearBannerImg img{width: 135%; height: auto; float: left; transform: translateX(-300px); }
 
-.newYearBanner .newYeardetail{position: absolute; width: 100%; height: auto; display: flex;}
+.newYearBanner .newYeardetail{_position: absolute; width: 100%; height: auto; display: flex; justify-content: flex-end; padding: 130px 40px;}
 /* .newYearBanner .detailTxt{text-align: left; margin-left: 55%; display: flex; flex-direction: column; _position: absolute; margin-top: 130px;} */
-.newYearBanner .detailTxt{width: 50%; margin-left: 50%;}
+.newYearBanner .detailTxt{width: 50%; _margin-left: 50%;}
 .newYearBanner .detailTxt h1{font-size: 54px; color: #4b535d; font-weight: 500; font-family: 'koverwatch', sans-serif;}
 .newYearBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
-.newYearBanner .detailTxt p{font-size: 17px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
-.newYearBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px;}
+.newYearBanner .detailTxt p{font-size: 15px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400; width: 100%;}
+.newYearBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px; transition: all 0.4s;}
 
 
 .eventSection .saleBanner{width: 100%; height: auto; overflow: hidden; position: relative;     display: flex;justify-content: center; align-items: center;}
-.saleBanner .saleBannerImg{width: 100%; height: auto;}
-.saleBanner .saleBannerImg img{width: 160%; height: auto; overflow: hidden; float: left; transform: translateX(-20%);}
+.saleBanner .saleBannerImg{width: 100%; height: auto; background: url(../img/event_banner_3.jpeg); background-position: 50%;}
+.saleBanner .saleBannerImg img{width: 100%; height: auto; overflow: hidden; float: left; transform: translateX(-20%); }
 
 
 /* 세일 배너 섹션 */
-.saleBanner .saledetail{position: absolute; width: 100%; height: auto;}
+.saleBanner .saledetail{_position: absolute; width: 100%; height: auto; padding: 40px 0 ;}
 .saleBanner .detailTxt{text-align: right; width: 50%;}
 .saleBanner .detailTxt h1{font-size: 54px; color: #4b535d; font-weight: 500; font-family: 'koverwatch', sans-serif;}
 .saleBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
-.saleBanner .detailTxt p{font-size: 17px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
-.saleBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px;}
+.saleBanner .detailTxt p{font-size: 15px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+.saleBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(39, 130, 250, 0.9); text-align: center; margin-top: 30px; transition: all 0.4s;}
 
-
-
+.eventSection a:hover{opacity: 0.8; transform: scale(1.05);}
 
 
 
@@ -166,7 +212,7 @@ a{text-decoration: none;}
 
 .newsSection .newsBoxes{width: 100%; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; padding-right: 20px; padding-bottom: 15px; gap: 5px;}
 
-.newsSection .newsBoxes>div{width: 100%; border: 1px solid #ddd; height: auto; float: left; padding: 5px; display: flex; flex-direction: column; margin: 10px 0;}
+.newsSection .newsBoxes>div{width: 100%; border: 1px solid #ddd; height: auto; float: left; padding: 5px; display: flex; flex-direction: column; background: #fff;}
 .newsSection .newsBoxes .newsImgSec{width: 100%; height: auto; border: 1px solid #ddd; overflow: hidden;}
 .newsSection .newsBoxes .newsImgSec>a{width: 100%; height: 200px; padding: 5px; background-image: url(../img/news_1.png); background-size: cover; display: block; background-repeat: no-repeat; background-position: 50%;}
 
@@ -175,29 +221,37 @@ a{text-decoration: none;}
 .newsSection .newsBoxes .newsImgSec>a.grid4{background-image: url(../img/news_4.png); }
 
 /* .newsSection .newsBoxes .newsImgSec>a>img{width: 200px; height: 100px;} */
-.newsSection .newsBoxes .newsImgSec>a:hover{transform: scale(1.03);}
+.newsSection .newsBoxes .newsImgSec>a:hover{transform: scale(1.03); }
 
-.newsSection .newsBoxes .newsTitSec{width: 100%; height: auto; _border: 1px solid #ddd; margin-top: 10px; padding: 5px 10px;}
+.newsSection .newsBoxes .newsTitSec{width: 100%; height: auto; _border: 1px solid #ddd; margin-top: 10px; padding: 5px 5px;}
 .newsSection .newsBoxes .newsTitSec a{display: block; color: #222; font-size: 15px; margin-bottom: 5px;}
 .newsSection .newsBoxes .newsTitSec span{ color: #4b535d; font-size: 16px;}
 
 
 
+.newsSection .newsLeftBox .viewAllBtn{font-family: 'Noto Sans KR',sans-serif; color: #fa9c1e; display: none;}
+.newsSection .newsLeftBox .viewAllBtn i{padding-left: 10px; font-size: 16px;}
+
 /* ------------ */
 
-.newsSection .newsRightBox{width: 25%; height: auto; float: left; display: flex; flex-direction: column; text-align: center; align-items: center; transform: translateY(50%);}
-.newsSection .newsRightBox>div{width: 25%;}
+.newsSection .newsRightBox{width: 50%; height: auto; float: left; display: flex; flex-direction: column; text-align: center; _align-items: center; transform: translateY(50%);}
+/* .newsSection .newsRightBox>div{width: 25%;} */
 .newsSection .newsRightBox>div {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.newsSection .newsRightBox>div h4{width: 100%; font-size: 20px; color: #333;}
-.newsSection .newsRightBox>div img{width: 250px; margin: 15px 0;}
-.newsSection .newsRightBox>div a{display: block; font-family: 'Noto Sans KR',sans-serif; background: #4b535d; color: #fff; font-size: 24px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; margin-top: 30px; transition: all 0.4;}
 
-.newsSection .newsRightBox>div a:hover{transform: scale(1.05, 1.05);}
+
+.newsSection .newsRightBox>div span{}
+.newsSection .newsRightBox>div h4{width: 100%; font-size: 20px; color: #333;}
+.newsSection .newsRightBox>div img{width: 250px; margin: 30px 0;}
+.newsSection .newsRightBox>div a{display: block; font-family: 'Noto Sans KR',sans-serif; background: #4b535d; color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; _margin-top: 30px; transition: all 0.4s;}
+
+.newsSection .newsRightBox>div a:hover{transform: scale(1.03); opacity: 0.8;}
+
+
 
 
 
@@ -211,44 +265,44 @@ a{text-decoration: none;}
 
 .hero .heroCon .heroTit{width: 100%; height: auto; text-align: center; margin-bottom: 30px;}
 .hero .heroCon .heroTit h1{font-size: 54px;  font-family: 'koverwatch'; font-weight: 500; color: #4b535d;}
-.hero .heroCon .heroTit p{font-size: 20px; font-weight: 500; margin: 20px 0 50px; color: #333; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+.hero .heroCon .heroTit p{font-size: 20px; font-weight: 500; margin: 20px 0 30px; color: #333; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
 
 
-.hero .heroCon .heroPanel{margin-top: 50px;}
-.hero .heroCon .heroDesc{width: 100%; height: 400px; _background: cornsilk; display: flex; align-items: center; justify-content: center;}
+.hero .heroCon .heroPanel{_margin-top: 50px;}
+.hero .heroCon .heroDesc{width: 100%; height: auto; _background: cornsilk; display: flex; align-items: center; justify-content: center;}
 
 .hero .heroCon .heroDesc .heroImg{width: 50%; height: auto; text-align: center;}
 .hero .heroCon .heroDesc .heroImg>div{width: 100%; text-align: center;}
-.hero .heroCon .heroDesc .heroImg img{_width: 490px; height: 400px;} 
+.hero .heroCon .heroDesc .heroImg img{height: 400px;} 
 
 .hero .heroCon .heroDesc .heroTxt{width: 50%; display: flex; align-items: center; text-align: left;}
 .hero .heroCon .heroDesc .heroTxt>div{width:100%;}
-.hero .heroCon .heroDesc .heroTxt h2{font-family: 'koverwatch'; font-size: 45px; color: #4b535d;} 
-.hero .heroCon .heroDesc .heroTxt p{font-size: 25px; margin-top: 20px; font-weight: 200; font-family: 'koverwatch'; color: #444;}
+.hero .heroCon .heroDesc .heroTxt h2{font-family: 'koverwatch'; font-size: 45px; color: #4b535d; font-weight: 500;} 
+.hero .heroCon .heroDesc .heroTxt p{font-size: 18px; margin-top: 20px; font-weight: 500; _font-family: 'koverwatch'; color: #111;}
 
 
 
 .hero .heroList{width: 100%; margin: 50px 0; text-align: center;}
 
-.hero .heroList>a{display: block; font-family: 'Noto Sans KR',sans-serif; background: #4b535d; color: #fff; font-size: 24px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; margin-top: 30px; transition: all 0.4;}
-.hero .heroList>a:hover{transform: scale(1.05, 1.05);}
+.hero .heroList>a{display: block; font-family: 'Noto Sans KR',sans-serif; background: #4b535d; color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; margin-top: 30px; transition: all 0.4s;}
+.hero .heroList>a:hover{transform: scale(1.03); opacity: 0.8;}
 
 
 
 .hero .heroList .heroPortrait{width: 100%; padding: 0 70px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
 
-.hero .heroList .heroPortrait>div{display: inline-block; margin: 10px 5px; display: flex; flex-direction: column; align-items: center; transition: all 0.4}
+.hero .heroList .heroPortrait>div{display: inline-block; margin: 10px 5px; display: flex; flex-direction: column; align-items: center; transition: all 0.4s}
 
 /* .hero .heroList .heroPortrait>div:hover{transform: scale(1.2); } */
 
 
-.hero .heroList .heroPortrait>div a{_background-image: url(../img/hero_portrait_1.png); _height: 100px; display: inline-block;  border: 3px solid #ccc; transform: skewX(-10deg); overflow: hidden; background: #333; border-radius: 5px; width: 76px; height: 86px; transition: all 0.4;}
+.hero .heroList .heroPortrait>div a{_background-image: url(../img/hero_portrait_1.png); _height: 100px; display: inline-block;  border: 3px solid #ccc; _transform: skewX(-10deg); overflow: hidden; background: #333; border-radius: 5px; width: 76px; height: 86px; transition: all 0.4s;}
 
 /* .hero .heroList .heroPortrait>div a:hover{transform: scale(1.3); } */
-.hero .heroList .heroPortrait>div:hover a{_transform: skewX(-10deg); background: #fa9c1e;transform: scale(1.3);}
-.hero .heroList .heroPortrait>div a img{width: 100%; height: 100%; transform: skewX(10deg)}
+.hero .heroList .heroPortrait>div:hover a{background: #fa9c1e;transform: scale(1.3);}
+.hero .heroList .heroPortrait>div a img{width: 100%; height: 100%; _transform: skewX(10deg)}
 
-.hero .heroList .heroPortrait>div:hover a img{transform: skewX(10deg);}
+.hero .heroList .heroPortrait>div:hover a img{_transform: skewX(10deg);}
 
 .heroList .heroPortrait span{ display: inline-block; align-items: center; border-radius: 3px; padding: 2px 4px; font-size: 12px; font-weight: 500; z-index: 999; text-align: center; color: #4b535d;}
 
@@ -267,14 +321,14 @@ a{text-decoration: none;}
 
 .buyNow .container{width: 100%; height: auto; display: flex; justify-content: center; align-items: center;}
 .buyNow .container .buyLeft{width: 50%; text-align: right;}
-.buyNow .container .buyLeft img{width: 320px; padding: 30px;}
+.buyNow .container .buyLeft img{width: 100%; padding: 30px;}
 .buyNow .container .buyRight{width: 50%; text-align: left;}
 
 .buyRight>div{width: 100%;}
-.buyRight h1{font-size: 35px; font-family: 'koverwatch'; color: #4b535d;}
+.buyRight h1{font-size: 35px; font-family: 'koverwatch'; color: #4b535d; font-weight: 500;}
 .buyRight p{font-style: 18px;margin: 20px 0;}
-.buyRight a{display: block; background: rgba(248, 89, 26, 0.9); color: #fff; font-size: 24px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px;  transition: all 0.4; text-align: center;}
-
+.buyRight a{display: block; background: rgba(248, 89, 26, 0.9); color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px;  transition: all 0.4; text-align: center; transition: all 0.4s;}
+.buyRight a:hover{transform: scale(1.03); opacity: 0.8;}
 
 
 
@@ -284,25 +338,28 @@ a{text-decoration: none;}
 
 .sns{width: 100%; height: auto; background: #111}
 .snsContainter{width: 100%; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px 0;}
-.snsContainter h2{font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 20px;}
+.snsContainter h2{font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 20px; font-family: 'koverwatch'; font-weight: 500;}
 .snsContainter ul{display: flex; align-items: center; justify-content: center;}
-.snsContainter ul li{width: 60px; height: 60px; border:1px solid #999; border-radius: 50%;text-align: center;  margin: 15px; display: flex; align-items: center; justify-content: center;}
-.snsContainter ul li a{border: 2px solid #999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
-.snsContainter ul li a i{font-size: 30px; color: #999;}
+.snsContainter ul li{width: 60px; height: 60px; border:1px solid #999; border-radius: 50%;text-align: center;  margin: 15px; display: flex; align-items: center; justify-content: center; }
+.snsContainter ul li a{border: 2px solid #999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.4s;}
+.snsContainter ul li a i{font-size: 30px; color: #999; transition: all 0.4s;}
 
+.snsContainter ul li:hover a{background: #999;}
+.snsContainter ul li:hover a i{color: #111;}
 
 
 
 /* ----------------------------------------------------- */
 /* footer 섹션 */
 
-.footer{width: 100%; height: 500px; background: #f0edf2;}
-.footerContainter{width: 100%; height: auto; padding: 30px 0;}
+.footer{width: 100%; height: auto; background: #f0edf2;}
+.footerContainter{width: 100%; height: auto; padding: 30px 30px;}
 
 .langSelect{width: 100%; height: auto;}
-.langSelect .selected{text-align: center;}
+.langSelect .selected{text-align: center; transition: all 0.4s;}
 .langSelect .selected .globe{}
 .langSelect .selected .globe i{color: #00c6ff; font-size: 20px;}
+.langSelect .selected:hover .globe i{color: rgb(106, 253, 253);}
 .langSelect .selected span{font-size: 16px; margin: 10px;}
 .langSelect .selected .arrow{}
 .langSelect .selected .arrow i{font-size: 18px;}
@@ -313,10 +370,12 @@ a{text-decoration: none;}
 .footerLogo>div img{width: 125px;}
 
 
-.footerNav{width: 100%; height: auto; text-align: center;}
+
+.footerNav{width: 100%; height: auto; text-align: center; }
 .footerNav div{display: flex; align-items: center; justify-content: center;}
-.footerNav div a{display: inline-block; color: rgba(0,0,0,.7);}
-.footerNav div span{margin: 0 10px; color: rgba(0,0,0,.7);}
+.footerNav div a{display: inline-block; color: rgba(0,0,0,.7); font-size: 14px; transition: all 0.4s;}
+.footerNav div a:hover{color: #000;}
+.footerNav div span{margin: 0 15px; color: rgba(0,0,0,.7); display: inline-block; font-size: 14px;}
 
 
 

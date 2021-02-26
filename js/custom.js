@@ -51,7 +51,11 @@ $(function(){
     $(this).toggleClass("on");
 
     if($(this).hasClass("on")){
-      $(".depth_1").slideDown('fast');  
+      $(".depth_1").slideDown('fast'); 
+
+      $(".depth_2").hide();
+      $(".depth_3").hide();
+      $(".depth_4").hide(); 
     }else{
       $(".depth_1").slideUp('fast');  
     }
@@ -62,6 +66,9 @@ $(function(){
 
     if($(this).hasClass("on")){
       $(".depth_2").slideDown('fast');  
+      $(".depth_1").hide();
+      $(".depth_3").hide();
+      $(".depth_4").hide();
     }else{
       $(".depth_2").slideUp('fast');  
     }
@@ -72,8 +79,14 @@ $(function(){
 
     if($(this).hasClass("on")){
       $(".depth_3").slideDown('fast');  
+      $(".depth_1").hide();
+      $(".depth_2").hide();
+      $(".depth_4").hide();
+
     }else{
       $(".depth_3").slideUp('fast');  
+
+      
     }
 
     
@@ -81,9 +94,12 @@ $(function(){
 
   $(".mainNav>li .coommunity").click(function(){
     $(this).toggleClass("on");
-
+    
     if($(this).hasClass("on")){
-      $(".depth_4").slideDown('fast');  
+      $(".depth_4").slideDown('fast');
+      $(".depth_1").hide();
+      $(".depth_2").hide();
+      $(".depth_3").hide();  
     }else{
       $(".depth_4").slideUp('fast');  
     }

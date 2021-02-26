@@ -1,3 +1,10 @@
+@media (max-width: 1600px){
+  .newsSection .newsConBox{padding: 50px 40px;}
+
+}
+
+
+
 
 @media (max-width: 1200px){
   /* .nav .navBox{padding: 10px 10px ;} */
@@ -11,7 +18,7 @@
   .navBox .mainNav li{padding: 0 10px;}
   .newsSection .newsBoxes .newsImgSec>a{height: 150px;}
 
-
+  .newsSection .newsConBox{padding: 50px 60px;}
 }
 
 
@@ -105,7 +112,7 @@
 
 
 
-.hero .heroCon .heroDesc{display: block;}
+/* .hero .heroCon .heroDesc{display: none;} */
 .hero .heroCon .heroDesc .heroImg{width: 100%;}
 .hero .heroCon .heroDesc .heroTxt{width: 100%; text-align: center;}
 .hero .heroList{_float: left;}
@@ -118,7 +125,9 @@
 }
 
 @media (max-width: 768px){
-
+.hero .heroCon .heroDesc{display: none;}
+  
+  .buyNow .container .buyLeft img{width: 300px;}
 }
 
 
@@ -166,6 +175,10 @@
   .buyNow .container{flex-direction: column;}
   .buyNow .container .buyLeft{width: 100%; text-align: center;}
   .buyNow .container .buyRight{width: 100%; text-align: center;}
+
+  .buyNow .container .buyLeft img{padding: 15px 0; width:250px;}
+  .footerNav>div{flex-direction: column;}
+
 }
 
 
@@ -211,7 +224,11 @@
   .buyNow .container{padding: 20px;}
   .buyRight h1{font-size: 24px;}
   .buyRight p{font-size: 12px; margin: 10px;}
-
   
 
+
+
+  .footerNav>div{flex-direction: column;}
+
+  .legalRating .label img{width: 260px;}
 }

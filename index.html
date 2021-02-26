@@ -73,25 +73,98 @@
             <li><a href="">고객지원</a></li>
           </ul>
         </div>
-        <!-- <div class="clear rightNav">
-          <ul class="sideNav">
-            <li><a href="">고객지원</a></li>
-            <li><a href="">로그인</a></li>
-          </ul>
-        </div> -->
         <!-- end of nav List -->
       </div>
       <!-- end of nav box -->
-
+      
       <div class="mobileNav">
-        <div></div>
-        <i class="fa fa-bars"></i>
+        <div id="menu-container">
+          <div id="menu-wrapper">
+              <div id="hamburger-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <!-- hamburger-menu -->
+          </div>
+          <!-- menu-wrapper -->
+          
+          <ul class="menu-list accordion">
+            <div class="hidden_ow">
+              <img src="img/overwatch_logo.png" alt="">
+            </div>
 
-        <!-- <a class="menu-trigger" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a> -->
+              <li id="nav1" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="#">게임</a>
+              </li>
+              <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">정보</a></li>
+                  <li><a class="head" href="#">전장</a></li>
+              </ul> 
+              <li id="nav2" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">영웅</a>
+              </li>
+                  <ul class="menu-submenu accordion-content">
+                      <!-- <li><a class="head" href="#">Submenu1</a></li>
+                      <li><a class="head" href="#">Submenu2</a></li> -->
+                  </ul>
+              <li id="nav3" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="#">이벤트</a>
+              </li>
+                  <ul class="menu-submenu accordion-content">
+                      <li><a class="head" href="#">설날 이벤트</a></li>
+                      <li><a class="head" href="#">기록 보관소</a></li>
+                      <li><a class="head" href="#">감사제</a></li>
+                      <li><a class="head" href="#">하계 스포츠 대회</a></li>
+                      <li><a class="head" href="#">공포의 할로윈</a></li>
+                      <li><a class="head" href="#">환상의 겨울나라</a></li>
+                  </ul>
+              <li id="nav4" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">자료실</a>
+              </li>
+              <ul class="menu-submenu accordion-content">
+                  <!-- <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+                  <li><a class="head" href="#">Submenu3</a></li> -->
+              </ul>
+              <li id="nav5" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="#">E-스포츠</a>
+              </li>
+              <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">정보</a></li>
+                  <li><a class="head" href="#">오버워치 리그</a></li>
+                  <li><a class="head" href="#">오버워치 컨텐더스</a></li>
+                  <li><a class="head" href="#">오픈 디비전 코리아</a></li>
+                  <li><a class="head" href="#">오버워치 월드컵</a></li>
+
+              </ul>
+              <li id="nav6" class="toggle accordion-toggle"> 
+                  <span class="icon-plus"></span>
+                  <a class="menu-link" href="#">커뮤니티</a>
+              </li>
+              <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">플레이어 검색</a></li>
+                  <li><a class="head" href="#">일상 속의 영웅</a></li>
+                  <li><a class="head" href="#">토론장</a></li>
+              </ul>
+              <div class="hidden_buy">
+                <a href="#">구매하기</a>
+              </div>
+              <div class="hidden_blizzard">
+                <img src="img/hidden_nav_logo.png" alt="">
+              </div>
+              
+              
+          </ul>
+          <!-- menu-list accordion-->
+      </div>
+        
+
       </div>
     </section>
     
@@ -193,7 +266,7 @@
       <!-- <div class="news_bg"> -->
           <div class="news_bg">
             <!-- <div class="center"> -->
-              <div class="newsConBox clear">
+              <div class="newsConBox clear center">
                 <div class="newsLeftBox">
                   <div class="newsHeader">
                     <h3>주요 소식</h3>
@@ -439,6 +512,12 @@
           <div class="selected">
             <a href="" class="globe"><i class="fa fa-globe"></i></a>
             <span>한국어</span>
+            <select name="" id="">언어 선택
+              <option value="">한국어</option>
+              <option value="">English</option>
+              <option value="">Español</option>
+              <option value="">Deutsch</option>
+            </select>
             <a href="" class="arrow"><i class="fa fa-angle-right"></i></a>
           </div>
           <div class="langList"></div>
@@ -452,22 +531,52 @@
 
         <div class="footerNav">
           <div>
-            <a href="">인재 채용</a>
-            <span>|</span>
-            <a href="">회사 소개</a>
-            <span>|</span>
-            <a href="">고객 지원</a>
-            <span>|</span>
-            <a href="">보도 자료</a>
-            <span>|</span>
-            <a href="">API</a></li>
-            <span>|</span>
-            <a href="">블리자드 PC방</a>
+            <div class="leftFooter">
+              <a href="">인재채용</a>
+              <a href="">회사소개</a>
+              <a href="">고객지원</a>
+            </div>
+            <div class="rightFooter">
+              <a href="">보도자료</a>
+              <a href="">API</a></li>
+              <a href="">블리자드PC방</a>
+            </div>
           </div>
         </div>
 
-        <div class="info">
-
+        <div class="footerInfo">
+          <div class="infoContainer">
+            <p>&copy;2021 BLIZZARD ENTERTAINMENT, INC. 모든 권리는 BLIZZARD ENTERTAINMENT에 있습니다. <br>여기서 언급된 다른 모든 <a href="#">상표</a>는 각 소유권자들의 자산입니다.</p>
+            <div class="infoLink">
+              <a href=""><b>개인정보 처리방침</b></a>
+              <span>|</span>
+              <a href="">법률 관련 문서</a>
+              <span>|</span>
+              <a href="">이용약관</a>
+              <span>|</span>
+              <a href="">쿠키</a>
+            </div>
+            <div class="corpInfo">
+              블리자드 엔터테인먼트 유한 회사<br>
+              주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층<br>
+              대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: <a href="#">websupport@blizzard.co.kr</a><br>
+              사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | <a href="#">사업자정보확인</a><br>
+              대표이사: 자렛 알렌 브랙, 전동진 | 개인정보 보호책임자: 전동진 대표이사
+            </div>
+            <div class="legalRating">
+              <div>
+                <img src="img/footer_info_1.png" alt="">
+                <img src="img/footer_info_2.png" alt="">
+              </div>
+              <div class="label"><img src="img/footer_info_3.png" alt=""></div>
+              <div>
+                <img src="img/footer_info_4.png" alt="">
+                <img src="img/footer_info_5.png" alt="">
+              </div>
+                
+                <div class="label"><img src="img/footer_info_6.png" alt=""></div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -481,6 +590,8 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 
 <!-- <script src="js/test.js"></script> -->
 <script src="js/custom.js"></script>
